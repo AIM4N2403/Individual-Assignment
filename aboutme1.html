@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        :root {
+            --light: #eaecee;
+            --color-text: #3c3e41;
+            --box-shadow: 5px 5px 15px #c1c8d3, -5px -5px 15px #ffffff;
+            --gradient-bg: linear-gradient(-45deg, #D000F7, #24BAE3);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+
+        body {
+            background-color: #edf2fb;
+        }
+
+        #about-section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 12%;
+        }
+
+        .about-left img {
+            width: 430px;
+            height: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .about-right {
+            width: 54%;
+        }
+
+        .about-right ul li {
+            display: flex;
+            align-items: center;
+        }
+
+        .about-right h1 {
+            color: #031273;
+            font-size: 37px;
+            margin-bottom: 5px;
+        }
+
+        .about-right p {
+            color: #444;
+            line-height: 26px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .about-right .address {
+            margin: 25px 0;
+            text-align: justify;
+        }
+
+        .about-right .address ul li {
+            margin-bottom: 5px;
+        }
+
+        .address .address-logo {
+            margin-right: 15px;
+            color: #031273;
+        }
+
+        .address .saprater {
+            margin: 0 35px;
+        }
+
+        .about-right .expertise ul {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .expertise h3 {
+            margin-bottom: 10px;
+        }
+
+        .expertise .expertise-logo {
+            font-size: 19px;
+            margin-right: 10px;
+            color: #031273;
+        }
+
+        .copyright.d-flex {
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .find {
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .find ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        .find ul li {
+            width: 50px;
+            height: 50px;
+            box-shadow: var(--box-shadow);
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .find ul li:hover {
+            color: #fff;
+            background-image: var(--gradient-bg);
+        }
+
+        #myDIV {
+            animation: mymove 5s infinite;
+        }
+
+        @keyframes mymove {
+            50% {
+                word-spacing: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="about-section">
+        <div class="about-left">
+            <img src="img/aimanpic.png" />
+        </div>
+
+        <div class="about-right">
+            <h4 id="myDIV">My Story</h4>
+            <h1 style="font-size: 40px; font-family: 'Mouse Memoirs';">About Me</h1>
+            <p>My name is Muhammad Afif Aiman Bin Shahrom. Usually, people call me Aiman. I was born in Hospital Kampar and live in a small town called Malim Nawar. I was born on the 24th March of 2004. I have six siblings and I am the fourth child. Two of my older brothers are already married and one of them already has children.</p>
+
+            <p>I am studying at UiTM Kedah. I am a fourth-year student with a diploma in Library Informatics. I took the Library Informatics course because I want to become a librarian. While waiting for my SPM result, I spent my time at the public library near my house to read a book, enjoy the quiet and calm environment, and have a chill time there. That encourages me to become a librarian.</p>
+
+            <div class="address">
+                <ul>
+                    <li>
+                        <span class="address-logo">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                        <p>My Address</p>
+                        <span class="saprater">:</span>
+                        <p>Lot 186A, Jln PPRT, KG Tualang Sekah, Malim Nawar, Perak</p>
+                    </li>
+                    <li>
+                        <span class="address-logo">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <p>Phone Num</p>
+                        <span class="saprater">:</span>
+                        <p>019-4034392</p>
+                    </li>
+                    <li>
+                        <span class="address-logo">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        <p>My Email ID.</p>
+                        <span class="saprater">:</span>
+                        <p>afiftgt@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="expertise">
+                <h3>My Expertise</h3>
+                <ul>
+                    <li>
+                        <span class="expertise-logo">
+                            <i class="fab fa-html5"></i>
+                        </span>
+                        <p>Design</p>
+                    </li>
+                    <li>
+                        <span class="expertise-logo">
+                            <i class="fas fa-utensils"></i>
+                        </span>
+                        <p>Cooking</p>
+                    </li>
+
+                    <li>
+                        <span class="expertise-logo">
+                            <i class="fas fa-cookie-bite"></i>
+                        </span>
+                        <p>Baking</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="find">
+                <br>
+                <h3>Contact Me</h3>
+                </br>
+                <ul>
+                    <li><a href="https://www.facebook.com/ringa.linga.376/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/aaimnn_s" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/aimns9?t=ktHN5fdTxXV7-Hyc3_A3FA&s=35" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="feedback.html" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="copyright d-flex">
+        <span id="copyright">
+            © Copyright Afif Aiman Shahrom. All rights reversed.
+        </span>
+        <span id="lastUpdated"></span>
+    </div>
+
+    <script>
+        function getCurrentDate() {
+            var today = new Date();
+            var day = String(today.getDate()).padStart(2, '0'); // zero-padding day
+            var month = today.getMonth() + 1;
+            var year = today.getFullYear();
+
+            var formattedDate = formatDate(day, month, year);
+
+            return formattedDate;
+        }
+
+        function formatDate(day, month, year) {
+            var months = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+            return months[month - 1] + ' ' + day + ', ' + year;
+        }
+
+        function updateLastUpdated() {
+            var lastUpdatedElem = document.getElementById('lastUpdated');
+            if (lastUpdatedElem) {
+                lastUpdatedElem.textContent = 'Last Updated: ' + getCurrentDate();
+            }
+        }
+
+        updateLastUpdated();
+
+        setInterval(updateLastUpdated, 60000);
+    </script>
+</body>
+
+</html>
+

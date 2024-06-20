@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf2fb;
+    flex-direction: column;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 75rem;
+    margin-top: 2rem; 
+  }
+
+  .card {
+    position: relative;
+    width: 3rem;
+    height: 25rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .3);
+    flex: 0.15;
+    border-radius: 5rem;
+  }
+
+  .card img {
+    position: relative;
+    height: 25rem;
+    object-fit: cover;
+  }
+
+  .card:hover {
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+
+  .nav-button {
+    background-color: #29C5F6;  
+    border: none;
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-button:hover {
+    background-color: #002366;
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <figure class="card">
+    <img
+      src="img/family1.jpg"
+      alt="Family 1"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family2.jpg"
+      alt="Family 2"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family3.jpg"
+      alt="Family 3"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family4.jpg"
+      alt="Family 4"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family5.jpg"
+      alt="Family 5"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family6.jpg"
+      alt="Family 6"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family7.jpg"
+      alt="Family 7"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family8.jpg"
+      alt="Family 8"
+    >
+  </figure>
+  <figure class="card">
+    <img
+      src="img/family9.jpg"
+      alt="Family 9"
+    >
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <button class="nav-button" onclick="goToFamilyPage();">Previous</button>
+</div>
+
+<script>
+  function goToFamilyPage() {
+    window.location.href = 'family.html';
+  }
+</script>
+
+</body>
+</html>
+
+

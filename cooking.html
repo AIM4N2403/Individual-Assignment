@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cooking Hobby</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    body {
+      font-family: poppins;
+      font-size: 15px; 
+      margin-left: 135px;
+      margin-right: 135px;
+      padding: 0;
+      background-color: #edf2fb;
+      text-align: justify;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .frame {
+      border: 2px solid #ccc;
+      padding: 20px;
+      margin: 40px;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      margin: 40px auto; 
+      width: 1160px; 
+      max-width: 2000px; 
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .column:first-child {
+      border-right: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .frame {
+        flex-direction: column;
+      }
+    }
+
+    @keyframes flicker {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .flicker-effect {
+      animation: flicker 1s infinite;
+    }
+
+    .colorful-text {
+      color: #FF0000; 
+      color: #29C5F6;
+    }
+
+    .recipe-image {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .copyright.d-flex {
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-border {
+      border: 2px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .last-updated {
+      margin-left: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="cooking">
+    <h2 style="font-size: 40px; font-family:Mouse Memoirs; color:#031273;"><b>My Hobby: Cooking  &#127789;</b></h2>
+    <div class="text-border">
+    <p>Cooking is my passion! I love experimenting with flavors, trying new recipes, and creating delicious dishes from scratch. From simple weeknight dinners to elaborate feasts, cooking allows me to express my creativity and share my love for food with others. I have made many dishes, from traditional food to Western food. The kitchen is my happy place, where I can unwind, destress, and indulge in the joy of cooking. Here are some examples of dishes that I have. I hope you like the recipe! </p>
+   </div>
+    
+    <div class="frame">
+      <div class="column" style="display: flex; justify-content: center; align-items: center;">
+        <img src="img/sambal.png" alt="Sambal Recipe Image" class="recipe-image" style="width: 500px; height: 500px;"> 
+      </div>
+      <div class="column" style="text-align: justify;">
+        <h3 class="flicker-effect colorful-text" style="font-family:Lobster; font-size: 45px; font-style: italic;">Sambal Recipe</h3>
+        <p><b>Ingredients:</b></p>
+        <ul>
+          <li>25-30 large red chili peppers or 500g</li>
+          <li>60 bird's eye chili peppers or 300g</li>
+          <li>4-5 shallots</li>
+          <li>4 tomatoes</li>
+          <li>1 bulb or 12 cloves garlic</li>
+          <li>3 inches shrimp paste (belacan)</li>
+        </ul>
+        <p><b>Preparation Method:</b></p>
+        <ol>
+          <li>Heat oil and fry the shallots and garlic until soft. Remove and drain the oil.</li>
+          <li>Fry the red chilies and bird's eye chilies until they are soft and wilted. Remove and drain. You can fry the chilies together with the shallots.</li>
+          <li>Fry the tomatoes separately.</li>
+          <li>Grind all the ingredients in a chopper. If using a blender, add a little oil before grinding.</li>
+          <li>Heat oil and fry the shrimp paste until crispy.</li>
+          <li>Add the ground ingredients and sauté until the oil separates.</li>
+          <li>Add sugar, salt, and seasoning powder. Stir well.</li>
+          <li>Turn off the heat and transfer to a glass jar.</li>
+          <li>Cover the glass jar, but not tightly, and let the sambal cool down first before sealing it tightly.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="frame">
+      <div class="column">
+        <img src="img/aglioolio.jpg" alt="Aglio Olio Recipe Image" class="recipe-image" style="width: 500px; height: 500px;"> 
+      </div>
+      <div class="column" style="text-align: justify;">
+        <h3 class="flicker-effect colorful-text" style="font-family:lobster; font-size: 45px; font-style: italic;">Aglio Olio Recipe</h3>
+        <p><b>Ingredients:</b></p>
+        <ul>
+          <li>Spaghetti</li>
+          <li>Olive oil</li>
+          <li>Chicken</li>
+          <li>Salt</li>
+          <li>1 bulb or 12 cloves garlic</li>
+          <li>Red pepper flakes</li>
+          <li>Parsley</li>
+          <li>Salt to taste</li>
+          <li>Parmesan</li>
+        </ul>
+        <p><b>Preparation Method:</b></p>
+        <ol>
+          <li>Cook the pasta and reserve the water</li>
+          <li>After that, gently cook the garlic and put chicken or other protein(Optional)</li>
+          <li>Season the garlicky oil with parsley, red pepper flakes and other herbs</li>
+          <li>Incorporate the pasta water</li>
+          <li>Coat the pasta in the sauce</li>
+          <li>Put parmesan and ready to serve</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="copyright d-flex">
+      <span>© Copyright Afif Aiman Shahrom. All rights reversed.</span>
+      <div class="last-updated" id="lastUpdated"></div>
+    </div>
+  </section>
+
+  <script>
+    function getCurrentDate() {
+      var today = new Date();
+      var date = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      return date;
+    }
+
+    function updateLastUpdated() {
+      var lastUpdatedElem = document.getElementById('lastUpdated');
+      if (lastUpdatedElem) {
+        lastUpdatedElem.textContent = 'Last Updated: ' + getCurrentDate();
+      }
+    }
+
+    updateLastUpdated();
+  </script>
+
+</body>
+</html>
+
+

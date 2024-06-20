@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  background-color: #edf2fb; 
+}
+.container {
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+}
+.w3-card .video-thumbnail {
+  width: 100%;
+  height: auto;
+}
+.w3-card:hover .video-thumbnail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.w3-container {
+  text-align: center;
+  font-family: poppins;
+  font-size: 15px;
+}
+.playlist-text {
+  font-family: Cursive; 
+  font-style: italic;
+  font-size: 16px; 
+  color: #4169E1; 
+  text-decoration: underline;
+  animation: mymove 5s infinite;
+}
+.video-link {
+  text-decoration: none; 
+}
+.text-border {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.copyright.d-flex {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.last-updated {
+  margin-left: 10px;
+}
+@keyframes mymove {
+  50% {
+    text-decoration-color: red;    
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2 style="font-size: 40px; font-family:Mouse Memoirs; color:#031273; text-align: center; padding-top: 60px; padding-bottom: 15px;"><b>My Hobby: Listening to Music  &#127911;</b></h2>
+
+  <div class="w3-container">
+    <div class="text-border">
+    <p>I love music so much! I think I can find peace while listening to music. </p>
+    <p>For people of all ages, listening to music may be an enjoyable and fulfilling pastime. It elevates our mood and fosters creativity.  One of the greatest pastimes that anyone can conceive of is listening to music. It has been shown to provide countless advantages for both Our physical and emotional well-being.</p>    
+    </div>
+
+  </div>
+
+  <div class="w3-row-padding w3-section">
+
+    <div class="w3-half">
+      <div class="w3-card">
+        <a href="https://youtu.be/x6VKvAdMLVc?si=HMK8_eUmMqOeNvF8" class="video-link" target="_blank">
+        <img src="https://img.youtube.com/vi/x6VKvAdMLVc/maxresdefault.jpg" alt="YouTube Video Thumbnail" class="video-thumbnail">
+        <div class="w3-container">
+          <p class="playlist-text">Playlist 1.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half">
+      <div class="w3-card">
+        <a href="https://youtu.be/zStYh2eHOWk?si=NqpQ4PjAkxRRyyEG" class="video-link" target="_blank">
+        <img src="https://img.youtube.com/vi/zStYh2eHOWk/maxresdefault.jpg" alt="YouTube Video Thumbnail" class="video-thumbnail">
+        <div class="w3-container">
+          <p class="playlist-text">Playlist 2.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright d-flex">
+    <span>© Copyright Afif Aiman Shahrom. All rights reversed.</span>
+    <span class="last-updated" id="lastUpdated"></span>
+  </div>
+
+</body>
+<script>
+  function getCurrentDate() {
+    var today = new Date();
+    var date = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    return date;
+  }
+
+  function updateLastUpdated() {
+    var lastUpdatedElem = document.getElementById('lastUpdated');
+    if (lastUpdatedElem) {
+      lastUpdatedElem.textContent = 'Last Updated: ' + getCurrentDate();
+    }
+  }
+
+  updateLastUpdated();
+</script>
+</html>
+
+

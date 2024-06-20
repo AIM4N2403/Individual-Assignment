@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEEDBACK FORM</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('img/feedbackbg.jpg');
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+
+    a {
+      color: #1E90FF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .center {
+      text-align: center;
+      background-color: white;
+      text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <h2 style="text-align: center; padding-top: 25px; padding-bottom: 25px; font-size: 70px; font-family: 'Mouse Memoirs'; color: white; text-     shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);">
+    <marquee behavior="scroll" direction="">&#128269 FEEDBACK FORM &#128270</marquee>
+  </h2>
+
+  <form action="MAILTO:afiftgt@gmail.com" method="post" enctype="text/plain">
+    <b>Send e-mail to Muhammad Afif Aiman:</b><br><br>
+    
+    Name:<br>
+    <input type="text" name="fullname"><br><br>
+    
+    Address:<br>
+    <input type="text" name="address"><br><br>
+    
+    Program:<br>
+    <input type="text" name="prog"><br><br>
+    
+    Semester:<br>
+    <input type="text" name="sem"><br><br>
+    
+    Gender:<br>
+    <input type="radio" name="gender" value="male" checked>Male
+    <input type="radio" name="gender" value="female">Female<br><br>
+    
+    Comment:<br>
+    <textarea rows="4" cols="50" name="comment"></textarea><br><br>
+    
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  </form>
+
+  <div class="center">
+    <h2><b><a href="index.html">HOME</a></b></h2>
+  </div>
+</body>
+
+</html>

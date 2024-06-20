@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            background-color: #edf2fb;
+            padding-bottom: 50px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #031273;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #002366;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #29C5F6;
+        }
+        .copyright.d-flex {
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .next-button {
+            background-color: #29C5F6; 
+            border: none;
+            color: white; 
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 8px; 
+            transition: background-color 0.3s ease;
+        }
+        .next-button:hover {
+            background-color: #002366;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding-top: 25px; padding-bottom: 25px; font-size: 50px; font-family: 'Mouse Memoirs'; color:#031273;">My Family</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Relation</th>
+        </tr>
+        <tr>
+            <td>Shahrom Bin Yusof@Adnan</td>
+            <td>53</td>
+            <td>Father</td>
+        </tr>
+        <tr>
+            <td>Siti Masirah Binti Muhammad Zakai</td>
+            <td>53</td>
+            <td>Mother</td>
+        </tr>
+        <tr>
+            <td>ShahAzamuden Bin Shahrom</td>
+            <td>26</td>
+            <td>Brother</td>
+        </tr>
+        <tr>
+            <td>Afnan Amini Bin Shahrom</td>
+            <td>25</td>
+            <td>Brother</td>
+        </tr>
+        <tr>
+            <td>Ammar Zikry Bin Shahrom</td>
+            <td>23</td>
+            <td>Brother</td>
+        </tr>
+        <tr>
+            <td>Afif Aiman Bin Shahrom</td>
+            <td>21</td>
+            <td>Me</td>
+        </tr>
+        <tr>
+            <td>Atif Afham Bin Shahrom</td>
+            <td>19</td>
+            <td>Little Brother</td>
+        </tr>
+        <tr>
+            <td>Azib Azhad Bin Shahrom</td>
+            <td>13</td>
+            <td>Little Brother</td>
+        </tr>
+    </table>
+
+    <div style="text-align: center; margin-top: 20px;">
+       <button class="next-button" onclick="window.location.href = 'gallery.html';">Next</button>
+    </div>
+
+    <div class="copyright d-flex">
+        <span>© Copyright Afif Aiman Shahrom. All rights reversed.</span>
+        <span id="lastUpdated"></span>
+    </div>
+
+    <script>
+        function getCurrentDate() {
+            var today = new Date();
+            var date = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+            return date;
+        }
+
+        function updateLastUpdated() {
+            var lastUpdatedElem = document.getElementById('lastUpdated');
+            if (lastUpdatedElem) {
+                lastUpdatedElem.textContent = 'Last Updated: ' + getCurrentDate();
+            }
+        }
+
+        updateLastUpdated();
+    </script>
+
+</body>
+</html>
+
+
+
